@@ -66,15 +66,5 @@ class MathOperations() {
     }
 }
 
-//fun main() {
-//    println(largestCommonDivider(24, 36))
-//    println(leastCommonMultiple(24,36))
-//    println(containsOrNot("1234"))
-//    println(containsOrNot("1234$"))
-//    println(sumEvenNumbers(100))
-//    println(reverseNumber(1234567800))
-//    println(isPalindrome("12343"))
-//    print(isPalindrome("123454321"))
-//}
 
 
