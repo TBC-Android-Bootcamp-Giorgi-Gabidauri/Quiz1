@@ -4,22 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/input_numbers_and_calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvAnswerTwoNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="see your answer here" />
+        android:text="@string/see_your_answer_here" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
@@ -27,14 +29,18 @@
         android:gravity="center">
 
         <EditText
+            android:id="@+id/etFirstNum"
             android:layout_width="wrap_content"
+            android:inputType="number"
             android:layout_height="wrap_content"
-            android:hint="input1" />
+            android:hint="@string/input1" />
 
         <EditText
+            android:id="@+id/etSecondNum"
+            android:inputType="number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="input2" />
+            android:hint="@string/input2" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -42,46 +48,63 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLCD"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/lcd" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLCM"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/lcm" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tvAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_your_answer_here" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <EditText
+        android:id="@+id/etInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="input" />
+        android:hint="@string/input_text_and_check_for" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReverse"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/reverse_number" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnIsPalindrome"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/isPalindrome" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
     </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSumEvenNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sumEvenNumbersUpTo100" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnContains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contains" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

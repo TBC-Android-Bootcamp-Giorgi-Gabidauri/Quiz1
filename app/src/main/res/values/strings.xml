@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Math Operations</string>
+    <string name="input_numbers_and_calculate">input numbers and calculate:</string>
+    <string name="see_your_answer_here">see your answer here</string>
+    <string name="lcd">LCD</string>
+    <string name="input1">input1</string>
+    <string name="input2">input2</string>
+    <string name="lcm">LCM</string>
+    <string name="input_text_and_check_for">input text and check for:</string>
+    <string name="reverse_number">reverse Number</string>
+    <string name="isPalindrome">isPalindrome</string>
+    <string name="sumEvenNumbersUpTo100">sumEvenNumbersUpTo100</string>
+    <string name="contains">conteins \'$\'</string>
 </resources>
