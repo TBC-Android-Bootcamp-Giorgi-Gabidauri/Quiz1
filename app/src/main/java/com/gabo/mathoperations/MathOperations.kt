@@ -9,7 +9,7 @@ fun main() {
     println(containsOrNot("1234"))
     println(containsOrNot("1234$"))
     println(addEvenNumbers(100))
-    println(reverseNumber(12345678))
+    println(reverseNumber(1234567800))
     println(isPalindrome("12343"))
     print(isPalindrome("123454321"))
 }
@@ -64,7 +64,12 @@ private fun addEvenNumbers(num: Int): Int {
         return num
 }
 private fun reverseNumber(input: Int) : String{
-    return input.toString().reversed()
+    var i = 0
+    var answer = input.toString()
+   while(answer[answer.lastIndex] == '0'){
+       answer = answer.dropLast(1)
+   }
+       return answer.reversed()
 }
 private fun isPalindrome(input: String): Boolean{
     var answer = false
